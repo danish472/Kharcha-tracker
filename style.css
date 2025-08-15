@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.budget-section {
+    margin-bottom: 15px;
+}
+
+.budget-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.remaining {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.input-section, .filter-reset {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.danger {
+    background: #dc3545;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+td.editable {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #f9f9f9;
+}
+
+.total {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.monthly-summary {
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .input-section, .filter-reset {
+        flex-direction: column;
+    }
+    table, .monthly-summary table {
+        font-size: 14px;
+    }
+}
